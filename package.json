@@ -1,0 +1,27 @@
+{
+  "name": "jabberbot",
+  "version": "1.0.0",
+  "description": "XMPP (Jabber) bot",
+  "main": "index.js",
+  "bin": {
+    "jabberbot": "index.js"
+  },
+  "keywords": [
+    "jabber",
+    "xmpp",
+    "bot"
+  ],
+  "author": "Nigel Hanlon <nigel@mapwolf.net>",
+  "contributors": [
+    {
+      "name": "Nigel Hanlon",
+      "email": "nigel@mapwolf.net"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+      "node-xmpp" : "*",
+      "request": "*",
+      "wolfram": "*"
+  }
+}
