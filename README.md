@@ -57,11 +57,15 @@ The following commands are supported:
 
 ## Data Sources
 
-The !lookup module uses the Wolfram Alpha API and Node Package https://www.npmjs.com/package/wolfram-alpha.
-The !yomomma module uses the API from http://yomomma.info.
-The !chuck module makes use of The Internet Chuch Norris Database: http://www.icndb.com/api/
-The !weather module calls the OpenWeatherMap API at http://openweathermap.org/api.
-The !bikes module makes a call to http://www.dublinbikes.ie/All-Stations/Station-map to find available bikes next to our office.
+- The !lookup module uses the Wolfram Alpha API and Node Package https://www.npmjs.com/package/wolfram-alpha.
+
+- The !yomomma module uses the API from http://yomomma.info.
+
+- The !chuck module makes use of The Internet Chuch Norris Database: http://www.icndb.com/api/
+
+- The !weather module calls the OpenWeatherMap API at http://openweathermap.org/api.
+
+- The !bikes module makes a call to http://www.dublinbikes.ie/All-Stations/Station-map to find available bikes next to our office.
 
 ## License
 
