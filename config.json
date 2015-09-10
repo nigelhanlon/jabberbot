@@ -1,7 +1,7 @@
 {
-    "username": "me@some.jabber.server",
-    "password": "my_pa$$word",
-    "room": "someroom@my.jabber.server",
+    "username": "me@my-jabber-server.com",
+    "password": "awesome password",
+    "room": "some-room@my-jabber-server.com",
     "nick": "HAL9000",
-    "wolframID": "request app id"
+    "wolframID": "REQUEST THIS APP ID"
 }

@@ -4,8 +4,9 @@ var xmpp = require('node-xmpp')
 var config = require('./config');
 var weather = require('./weather');
 var lookup = require('./lookup');
-//var jfgi = require('./jfgi');
-var geodir = require('./geodir');
+var chuck = require('./chuck');
+var yomomma = require('./yomomma');
+var bikes = require('./dublinbikes');
 
 if(config.username === null || config.password === null) {
     console.err("Missing username or password in config.json");
@@ -80,6 +81,24 @@ client.on('stanza', function(stanza) {
         return sendMessage(daisy);
     }
 
+    if(message.indexOf('!chuck') === 0) {
+        chuck(fromNick, function(joke){
+            return sendMessage(joke);
+        });
+    }
+
+    if(message.indexOf('!bikes') === 0) {
+        bikes(fromNick, function(res){
+            return sendMessage(res);
+        });
+    }
+
+    if(message.indexOf('!yomomma') === 0) {
+        yomomma(fromNick, function(joke){
+            return sendMessage(joke);
+        });
+    }
+
     if (message.indexOf('!lookup') === 0) {
         var query = message.replace('!lookup','');
 
@@ -92,19 +111,6 @@ client.on('stanza', function(stanza) {
             return sendMessage("Usage: !lookup question");
         }
     }
-
-    // if (message.indexOf('!google') === 0) {
-    //     var query = message.replace('!google','');
-    //
-    //     if(place.length > 1) {
-    //         jfgi(query, function(answer){
-    //             return sendMessage(answer);
-    //         });
-    //     }
-    //     else {
-    //         return sendMessage("Usage: !google something");
-    //     }
-    // }
 });
 
 function sendMessage(message) {

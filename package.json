@@ -22,6 +22,7 @@
   "dependencies": {
       "node-xmpp" : "*",
       "request": "*",
-      "wolfram": "*"
+      "wolfram": "*",
+      "xml2js": "*"
   }
 }
